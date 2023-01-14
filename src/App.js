@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
+import Routing from "./components/Routing";
+
 import './App.css';
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <BrowserRouter>
+        <Header></Header>
+            <Routing></Routing>
+
+        <Footer></Footer>
+        
+
+
+    
+
+
+        <a href="/" classNameName="btn btn-secondary py-3 fs-4 back-to-top"><i classNameName="bi bi-arrow-up"></i></a>
+
+
+     </BrowserRouter>
+
+    </>
   );
 }
 
